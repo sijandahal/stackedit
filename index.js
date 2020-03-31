@@ -18,7 +18,7 @@ const httpServer = http.createServer(app);
 httpServer.listen(port, null, () => {
   console.log(`HTTP server started: http://localhost:${port}`);
 });
-
+console.log("THis is the change")
 // Handle graceful shutdown
 process.on('SIGTERM', () => {
   httpServer.close(() => {
